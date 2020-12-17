@@ -17,7 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from covidpledge import views
 
+
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path ('',views.home)
+    path('',views.home),
+    path('home/',views.home),
+    path('register/', views.registerPage, name="register"),
+	path('login/', views.loginPage, name="login"), 
+    path('contact/',views.contact) 
+	
 ]

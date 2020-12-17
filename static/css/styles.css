@@ -1,6 +1,7 @@
 footer {
     background: #da7516 !important;
     color: #000;
+    font-size: 16px;
 }
 
 footer h5, footer ul li a {
@@ -13,7 +14,7 @@ nav, footer .after-footer {
 }
 
 .nav-item .nav-link {
-    color: rgb(175, 169, 169) !important;
+    color: #000 !important;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
@@ -31,7 +32,7 @@ footer .email-btn-wrapper {
 }
 
 div.jumbotron.hero-technology{
-    color:#ececec;
+    color:#fff;
     text-align:center;
     background-size:cover;
     background-position:center;
@@ -39,6 +40,22 @@ div.jumbotron.hero-technology{
     margin:0;
 }
 
+.section {
+    background: #01153E;
+    color: #fff;
+}
+.section {
+    padding: 2.5em 0;
+    clear: both;
+}
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1004px;
+}
 h1.hero-title,h2.hero-title,h3.hero-title{
     text-shadow:0 2px 2px rgba(0,0,0,.3);
     color:#000;
@@ -52,10 +69,13 @@ p.hero-subtitle{
     color:#1f1c1c;
     font-weight:500;
 }
-
+#pledge{
+    background-color: #8A8589;
+}
 @media (max-width:767px){
     .box{
           padding:10px;
+         
     }
     nav
     nav img{
@@ -80,7 +100,14 @@ p.hero-subtitle{
     min-height:100vh;
 }
 
-/* .navigation-clean{
+@media (min-width:768px){
+    .navigation-clean{
+          padding-top:1rem;
+          padding-bottom:1rem;
+    }
+}
+
+ .navigation-clean{
     padding-top:1rem;
     padding-bottom:1rem;
     color:#333;
@@ -89,13 +116,6 @@ p.hero-subtitle{
     border:none;
     margin-bottom:0;
 } 
-
-@media (min-width:768px){
-    .navigation-clean{
-          padding-top:1rem;
-          padding-bottom:1rem;
-    }
-}
 
 .navigation-clean .navbar-brand{
     font-weight:700;
@@ -120,7 +140,7 @@ p.hero-subtitle{
 }
 
 .navigation-clean.navbar-light .navbar-nav .nav-link.active,.navigation-clean.navbar-light .navbar-nav .nav-link.active:focus,.navigation-clean.navbar-light .navbar-nav .nav-link.active:hover{
-    color:#8f8f8f;
+    color:#fff;
     box-shadow:none;
     background:0 0;
     pointer-events:none;
@@ -155,7 +175,7 @@ p.hero-subtitle{
 .navigation-clean .dropdown-menu .dropdown-item:focus,.navigation-clean .dropdown-menu .dropdown-item:hover{
     background:#eee;
     color:inherit;
-}*/
+}
 
 body{
     margin-top:70px;
@@ -166,15 +186,19 @@ body{
     color:#212529;
     text-align:left;
     background-color:#fff;
+    font-family: "Gotham A", "Gotham B", sans-serif;
+    font-size: 14px;
 }
-
 
 /* Navbar bg color */
 nav {
-    background: #2c3e50;
+    background-color: #2c3e50;
     height: 20vh;
 }
-
+label{
+    font-size: 16px;
+    color: #000;
+}
 /* Navbar links color */
 .nav-link{
     color: white !important;
@@ -190,8 +214,7 @@ nav img{
 .middle-section {
     margin-top: -6px;
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
    .middle-section {
         min-height: calc(100vh - 144px); /* 144 = 72 + 72 */
         margin-top: 72px; /* 72 is the height of navbar */
@@ -316,4 +339,76 @@ footer .after-footer a:hover {
     .after-footer {
         padding-right: 10% !important;
     }
+}
+textarea { font-size: 18px; }
+
+section .wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.highdark_background {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .8);
+}
+section h2 {
+    font-size: 50px;
+    line-height: 78px;
+    color: #ed1944;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.covid-pledge h2, .covid-pledge p {
+    color: #fff;
+}
+.covid-pledge p, section p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.cta-right {
+    display: flex;
+    align-items: center;
+}
+.hit-counter {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: 17%;
+}
+.hit-counter h2 {
+    color: #000000;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.hit-counter p {
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#join_community{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.btn-theme {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    min-width: 200px;
+    background-color: #ed1944;
+    transition: all .5;
+    box-shadow: none;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
 }
